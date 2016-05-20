@@ -1,0 +1,15 @@
+{
+    "hiringManager": {
+        "name": "Elise Linn",
+        "team": "Application Engineering",
+        "company": "FastPay"
+    },
+    "candidate": {
+        "name": "Brian Vanko",
+        "role": "Front End Engineer"
+    },
+    "reference": {
+        "name": "Reference Name",
+        "phone": "888 555 1234"
+    }
+}
