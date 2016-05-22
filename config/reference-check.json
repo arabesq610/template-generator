@@ -1,4 +1,4 @@
-{
+[{
     "hiringManager": {
         "name": "Elise Linn",
         "team": "Application Engineering",
@@ -9,7 +9,35 @@
         "role": "Front End Engineer"
     },
     "reference": {
-        "name": "Reference Name",
-        "phone": "888 555 1234"
+        "name": "Reference #1",
+        "phone": "888 555 2222"
     }
-}
+}, {
+    "hiringManager": {
+        "name": "Elise Linn",
+        "team": "Application Engineering",
+        "company": "FastPay"
+    },
+    "candidate": {
+        "name": "Brian Vanko",
+        "role": "Front End Engineer"
+    },
+    "reference": {
+        "name": "Reference #2",
+        "phone": "888 555 2222"
+    }
+}, {
+    "hiringManager": {
+        "name": "Elise Linn",
+        "team": "Application Engineering",
+        "company": "FastPay"
+    },
+    "candidate": {
+        "name": "Brian Vanko",
+        "role": "Front End Engineer"
+    },
+    "reference": {
+        "name": "Reference #3",
+        "phone": "888 555 3333"
+    }
+}]

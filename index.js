@@ -6,7 +6,6 @@
  * @example
  *  $ node index.js --template=reference-check
  */
-'use strict';
 
 // Load required modules
 var argv = require('minimist')(process.argv.slice(2));
@@ -17,7 +16,9 @@ var _ = require('lodash');
 var requiredArgs = ['template'];
 var tplConfig = {};
 
+// Make sure we have the arguments we need
 _.forEach(requiredArgs, function (i) {
+    'use strict';
     var shortCircuit;
 
     if (!argv[i]) {
@@ -34,26 +35,32 @@ _.forEach(requiredArgs, function (i) {
 
 });
 
+
 function generateTemplate(config) {
+    'use strict';
+
     var templateLocation = __dirname + '/templates/' + config.template + '.hbs';
     var hbsData = config.data;
 
+    _.forEach(hbsData, function (obj) {
 
-    console.warn(hbsData);
+        var hbs = handlebars.create({
+            partialsDir: __dirname + 'templates'
+        });
 
-    var hbs = handlebars.create({
-        partialsDir: __dirname + 'templates'
+        hbs.engine(templateLocation, obj, function (err, doc) {
+            if (!doc) {
+                return;
+            }
+            if (err) {
+                throw err;
+            }
+            console.log(doc);
+        });
+
     });
 
-    hbs.engine(templateLocation, hbsData, function (err, doc) {
-        if (!doc) {
-            return;
-        }
-        if (err) {
-            throw err;
-        }
-        console.log(doc);
-    });
+
 }
 
 tplConfig.data = require('./config/' + tplConfig.template + '.json');
