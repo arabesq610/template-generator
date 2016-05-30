@@ -1,11 +1,11 @@
 
-Subject: Reference for {{ candidate.name }}
+Subject: Reference for {{ candidate.name.first }} {{ candidate.name.last }}
 
-Hello {{ reference.name }},
+Hello {{ reference.name.first }},
 
-My name is {{ hiringManager.name }}. I manage the {{ hiringManager.team }} team at {{ hiringManager.company }} where a former colleague of yours, {{ candidate.name }}, has applied for a role as a {{ candidate.role }}.
+My name is {{ hiringManager.name.first }} {{ hiringManager.name.last }}. I manage the {{ hiringManager.team }} team at {{ hiringManager.company }} where a former colleague of yours, {{ candidate.name.first }} {{ candidate.name.last}}, has applied for a role as a {{ candidate.role }}.
 
-I am contacting you because Brian listed you as a reference on his application. Would you please respond with the best times to reach you via phone to provide a reference check for Brian? The number I have for you is {{ reference.phone }}. Please also let me know if that is still the best number to reach you.
+I am contacting you because {{ candidate.name.first }} listed you as a reference on {{ candidate.pronouns.possessive }} application. Would you please respond with the best times to reach you via phone to provide a reference check for {{ candidate.name.first }}? The number I have for you is {{ reference.phone }}. Please also let me know if that is still the best number to reach you.
 
 Thank you,
-{{ hiringManager.name }}
+{{ hiringManager.name.first }} {{ hiringManager.name.last }}

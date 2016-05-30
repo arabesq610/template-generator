@@ -1,43 +1,76 @@
 [{
     "hiringManager": {
-        "name": "Elise Linn",
-        "team": "Application Engineering",
-        "company": "FastPay"
+        "name": {
+            "first": "Hooliganous",
+            "last": "Miscreant"
+        },
+        "team": "Random Task",
+        "company": "Evil Corp"
     },
     "candidate": {
-        "name": "Brian Vanko",
-        "role": "Front End Engineer"
+        "name": {
+            "first": "Angry",
+            "last": "Gremlin"
+        },
+        "pronouns": {
+            "possessive": "his"
+        },
+        "role": "Chief Nerd"
     },
     "reference": {
-        "name": "Reference #1",
+        "name": {
+            "first": "Champion",
+            "last": "Tiger"
+        },
+        "phone": "888 555 1111"
+    }
+}, {
+    "hiringManager": {
+        "name": {
+            "first": "Happy",
+            "last": "Camper"
+        },
+        "team": "Glorious",
+        "company": "A Cheerful Bunch"
+    },
+    "candidate": {
+        "name": {
+            "first": "Amazing",
+            "last": "Tool"
+        },
+        "pronouns": {
+            "possessive": "her"
+        },
+        "role": "Flower Pedler"
+    },
+    "reference": {
+        "name": {
+            "first": "Adam",
+            "last": "Sandler"
+        },
         "phone": "888 555 2222"
     }
 }, {
     "hiringManager": {
-        "name": "Elise Linn",
-        "team": "Application Engineering",
-        "company": "FastPay"
+        "name": {
+            "first": "Blessed",
+            "last": "Reverend"
+        },
+        "team": "Ministry of Magic",
+        "company": "Magic Corp"
     },
     "candidate": {
-        "name": "Brian Vanko",
-        "role": "Front End Engineer"
+        "name": "Engelbert Humperdinck",
+        "role": "Composer"
+    },
+    "pronouns": {
+        "possessive": "his"
     },
     "reference": {
-        "name": "Reference #2",
-        "phone": "888 555 2222"
-    }
-}, {
-    "hiringManager": {
-        "name": "Elise Linn",
-        "team": "Application Engineering",
-        "company": "FastPay"
-    },
-    "candidate": {
-        "name": "Brian Vanko",
-        "role": "Front End Engineer"
-    },
-    "reference": {
-        "name": "Reference #3",
+        "name": {
+            "first": "Charles",
+            "last": "Manson"
+        },
         "phone": "888 555 3333"
     }
 }]
